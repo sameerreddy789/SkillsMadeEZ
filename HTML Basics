@@ -1,0 +1,313 @@
+<!-- HTML - HyperText Markup Language -->
+ <!-- Page Source - Code of the website page  -->
+  <!-- Inspect - Code for each and every element in page  -->
+
+
+<!-- Creating a paragraph element-->
+ <p>Hello, World!</p>
+
+ <!-- There are 6 different heading elements in HTML: h1, h2, h3, h4, h5, and h6 -->
+  <h1>This is a Heading 1</h1>
+  <h2>This is a Heading 2</h2>  
+  <h3>This is a Heading 3</h3> 
+  <h4>This is a Heading 4</h4>
+  <h5>This is a Heading 5</h5>
+  <h6>This is a Heading 6</h6>
+<!-- This is the standard HTML document structure which is known as the boilerplate code -->
+
+<!-- We can get boilerplate code by typing ! and then pressing the tab key in most code editors -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  </body>
+  </html>
+
+  <!-- Title Tag-<title> tag is used to specify the title of the HTML document -->
+  <!-- The title appears in the browser tab and is used for SEO purposes -->
+  <!-- Meta Tag-<meta> tag is used to provide metadata about the HTML document -->
+  <!-- Metadata is data about the HTML document that is not displayed on the page -->
+  <!-- The <meta> tag provides information about the page such as character set, viewport, and title -->
+
+<!-- Lists in HTML -->
+ <!-- Lists are of two types: ordered lists and unordered lists -->
+ <!-- Ordered lists use the <ol> tag and unordered lists use the <ul> tag -->
+ <!-- List items are defined with the <li> tag -->
+<ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+<!-- a=uppercase letters-->
+<!-- A=uppercase letters -->
+<!-- i=lowercase roman numerals -->
+<!-- I=uppercase roman numerals -->
+<!-- 1=numbers -->
+<ol type="A">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+
+<!-- Attributes in HTML -->
+<!-- Attributes provide additional information about HTML elements -->
+  <!-- <ol type="A">
+        <li>Sachin</li>
+        <li>Manoj</li>
+        
+    </ol> -->
+    <!-- Here we are using the type attribute to specify the type of list items -->
+<!-- Common HTML attributes include: id, class, style, title, href, src, alt, etc. -->
+
+<!-- Anchor element -->
+ <!-- These are used to create links to other pages or resources -->
+<a href="https://www.google.com">Go to Google</a>
+<!-- Here href is an attribute that specifies the URL of the page the link goes to Google-->
+
+<!-- Image element -->
+ <!-- These are used to embed images in a webpage -->
+<img src="Nitro.jpg" alt="Description of image">
+<!-- The image added must be in the same folder as the code  -->
+ <!-- When using a online image , the direct url must be pasted in the source -->
+
+ <!-- Br Tag -->
+  <!--Used to break lines in HTML -->
+<p>This is the first line.<br>This is the second line.</p>
+<!-- The <br> tag is an empty tag and does not have a closing tag -->
+
+<!-- Bold,Italic and Underline Tags -->
+ <b>Bold text</b><br>
+ <i>Italic text</i><br>
+ <u>Underline text</u>
+  <!-- These tags are used to format text in HTML -->
+
+  <!-- Comment lines in HTML -->
+  <!-- Comments are not displayed in the browser and are used to leave notes for developers -->
+<!-- This is a comment in HTML -->
+ <!-- "Ctrl + /" and "Shift + Alt + A" is used to comment on uncomment lines in HTML -->
+
+ <!-- Inline vs Block Elements -->
+ <!-- Inline elements do not start on a new line and only take up as much width as necessary -->
+ <!-- Block elements start on a new line and take up the full width available -->
+
+<div>This is a block element.</div>
+<span>This is an inline element.</span><br>
+
+<!-- Heading Element-block -->
+<!-- Paragraph Element-block -->
+<!-- Anchor Tag-Inline -->
+<!-- Image Tag-Inline -->
+
+<!-- Div Elements -->
+<!-- These are used to group block-level elements together for styling or layout purposes -->
+ <!-- Div Element is a block element -->
+ <!-- Without Div -->
+  <a href=""www.google.com"">Link 1</a>
+  <a href=""www.facebook.com"">Link 2</a>
+  <a href=""www.twitter.com"">Link 3</a>
+
+  <!-- With Div -->
+  <div>
+    <a href=""www.google.com"">Link 1</a>
+    <a href=""www.facebook.com"">Link 2</a>
+  </div>
+    <a href=""www.twitter.com"">Link 3</a>
+  <!-- Here the first two links are grouped together using a div element -->
+
+<!-- Span Elements -->
+<!-- These are used to group inline elements together for styling purposes -->
+<p>This is a <span style="color:blue;">blue</span> word in a paragraph.</p>
+<!-- Here the word "blue" is wrapped in a span element to apply a blue color style -->
+<!-- The span element is an inline element -->
+
+<!-- Sup and sub Tag -->
+<p>This is an example of superscript: E = mc<sup>2</sup></p>
+<p>This is an example of subscript: H<sub>2</sub>O</p>
+<!-- The <sup> tag is used to define superscript text and the <sub> tag is used to define subscript text -->
+
+<!-- Semantic Markup -->
+<!-- Semantic elements provide meaning to the content they contain -->
+<!-- Examples include <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer> -->
+<!-- Header-Main part of the website -->
+   <header>
+  <h1>My Website</h1>
+  <p>Learning HTML Basics</p>
+</header><br>
+
+<!-- Footer-End part of the website -->
+   <footer>
+  <p>© 2026 My Website</p>
+  <p>Contact: info@example.com</p>
+</footer><br>
+
+<!-- Hr tag- -->
+ <p>Introduction</p>
+<hr>
+<p>Conclusion</p><br>
+
+  <!-- Main-Content of the website -->
+  <!-- Semantic tags-<header>, <nav>, <main>, <section>, <article>, <aside>, and <footer> -->
+  <!-- Non Semantic tags-<div>, <span> -->
+  <!-- Uses of Semantic tags - Search engines and accessibility tools can better understand the structure and content of a webpage when semantic tags are used. -->
+  <!-- A website can only have a unique header and footer, but multiple sections and articles. -->
+
+  <!-- Nav Tag-<nav> element is used to define navigation links -->
+ <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- Article Tag-<article> element is used to define a self-contained piece of content -->
+<article>
+  <h2>Article Title</h2>
+  <p>This is the content of the article.</p>
+</article>
+
+<!-- Section Tag-<section> element is used to define a section in a document -->
+  <section id="about">
+  <h1>About</h1>
+  <p>This website helps students learn web development.</p>
+</section>
+
+<section id="services">
+  <h1>Services</h1>
+  <p>We offer courses and mentorship.</p>
+</section>
+
+<section id="contact">
+  <h1>Contact</h1>
+  <p>Email: contact@example.com</p>
+</section><br>
+
+<!-- Aside Tag-<aside> element is used to define content that is related to the main content but separate from it -->
+<aside>
+  <h2>Related Links</h2>
+  <ul>
+    <li><a href="https://www.example1.com">Example 1</a></li>
+    <li><a href="https://www.example2.com">Example 2</a></li>
+  </ul><br>
+</aside>
+<!-- Tables in HTML -->
+ <!-- Tables are used to represent real life table data -->
+ <!-- Row: Horizantal line -->
+ <!-- Column: Vertical line -->
+  <!-- Header Row: Row in which header cells are placed -->
+  <table border = "Black">
+    <caption>Food Menu
+    </caption>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Burger</td>
+      <td>$5</td>
+    </tr>
+    <tr>
+      <td>Pizza</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>Pasta</td>
+      <td>$7</td>
+    </tr>
+  </table><br>
+
+<!-- Colspan and Rowspan Attributes -->
+  <!-- Colspan: Merges multiple columns into a single cell -->
+  <!-- Rowspan: Merges multiple rows into a single cell -->
+  <table border="1">
+      <tr>
+        <th colspan="2">Student Information</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Name: John Doe</td>
+        <td>Age: 20</td>
+      </tr>
+      <tr>
+        <td>Grade: A</td>
+      </tr>
+    </table><br>
+
+<!-- Forms in HTML -->
+<!-- Forms are used to collect user input -->
+<!-- Data is sent to the file specified in the action attribute -->
+
+<!-- Input Types in HTML -->
+<!-- Common input types include: text, password, email, number, checkbox, radio, submit, reset, button, date, file, etc. -->
+
+  <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+    </form><br>
+
+<!-- PlaceHolder Attribute -->
+ <input type="text" placeholder="Enter your name"><br>
+<!-- The placeholder attribute provides a hint to the user about what to enter in the input field -->
+
+<!-- Label Element -->
+<!-- It represents a caption for an item in a user interface -->
+<!-- To form a connection between form and type -->
+ <label for="username">Enter your username:</label>
+  <input type="text" id="username" name="username"><br>
+
+<!-- Input Types in HTML -->
+<!-- Common input types include: text, password, email, number, checkbox, radio, submit, reset, button, date, file, etc. -->
+ <!-- Select attribute-<select> element is used to create a dropdown list -->
+ <label for="course">Course:</label>
+<input type="text" id="course" placeholder="course"><br>
+
+<!-- Some attributes of input- required , disabled , readonly -->
+<!-- required ensures the user must fill the input field. -->
+<!-- disabled makes an input field inactive. -->
+<!-- readonly makes an input field read-only. -->
+<input type="text" placeholder="required input" required><br>
+<input type="text" placeholder="disabled input" disabled><br>
+<input type="text" placeholder="readonly input" readonly><br>
+
+<!-- Text Area Tag-<textarea> element is used to create a multi-line text input field -->
+<textarea rows="4" cols="50">Enter your feedback here...</textarea><br>
+
+<!-- Button Element-<button> element is used to create a clickable button -->
+<button type="button">Click Me!</button><br>
+
+<!-- Button using input -->
+<input type="submit" ><br>
+<input type="submit" value="Click Me!"><br>
+
+<!-- Name attribute-used to access input tag after submitting -->
+ <form action="https://www.youtube.com/results">
+  <input type ="text" placeholder="search in youtube" name="search_query">
+  <button>search</button>
+ </form><br>
+
+ <!-- Checkbox - It is a type of input element that allows users to select one or more options from a set of choices -->
+ <input type="checkbox" id="checkbox1">
+ <label for="checkbox1">Check me</label><br>
+
+ <!-- Radio Buttons-<input type="radio"> -->
+  <!-- The radio button in HTML is used to allow the user to select only one option from a group of related options. -->
+  <input type="radio" id="option1" name="options" value="Option 1">
+
+ <!-- Dropdown-<select> element is used to create a dropdown list -->
+  <!-- A dropdown list in HTML is used to allow users to select one option from a list of predefined options. -->
+  <select name="Profession" id="profession">
+    <option value="student">Student</option>
+    <option value="developer">Developer</option>
+    <option value="designer">Designer</option><br>
+  </select>
+
+  <!-- Range-<input type="range"> -->
+   <!-- The range input tag in HTML is used to create a slider control that allows users to select a value within a specified range by dragging a handle. -->
+  <label for="range">Range:</label>
+  <input type="range" id="range" name="range" min="0" max="100"><br>
