@@ -1,0 +1,640 @@
+  ```css
+  /* CSS Definition */
+  /* CSS stands for Cascading Style Sheets. It is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. It allows web developers to control the layout, colors, fonts, and overall visual appearance of web pages, separating content from design for better maintainability. */
+
+  /* Basic Format of CSS */
+  /* The basic format of a CSS rule consists of a selector followed by a declaration block enclosed in curly braces {}. Inside the declaration block, there are one or more declarations, each consisting of a property name, a colon (:), a value, and ending with a semicolon (;). Multiple declarations are separated by semicolons. */
+  /* Example: */
+  /* selector { */
+  /*   property1: value1; */
+  /*   property2: value2; */
+  /* } */
+  body {
+    background-color: white; /* This is a basic declaration */
+    color: black;
+  }
+
+  /* Types of CSS */
+  /* There are three main types of CSS: Inline, Internal (also called Embedded), and External. */
+  /* Inline CSS: Applied directly to an HTML element using the 'style' attribute. It's useful for quick, one-off styles but not recommended for larger projects as it mixes content and style. */
+  /* Example in HTML: <p style="color: red;">This is inline CSS.</p> */
+
+  /* Internal CSS: Defined within the <style> tag in the <head> section of an HTML document. It's good for single-page styles and overrides external styles if needed. */
+  /* Example in HTML: */
+  /* <head> */
+  /*   <style> */
+  /*     p { color: blue; } */
+  /*   </style> */
+  /* </head> */
+
+  /* External CSS: Written in a separate .css file and linked to the HTML document. This is the most efficient for large sites as it allows reuse across multiple pages and better separation of concerns. */
+  /* Example: See the linking section below for how to link it. */
+
+  /* Linking HTML File to CSS */
+  /* To link an external CSS file to an HTML file, use the <link> tag in the <head> section of the HTML document. The <link> tag should have rel="stylesheet" and href pointing to the CSS file path. */
+  /* Example in HTML: */
+  /* <head> */
+  /*   <link rel="stylesheet" href="styles.css"> */
+  /* </head> */
+  /* This assumes the CSS file is named 'styles.css' in the same directory. */
+
+  /* Color Property */
+  /* The color property sets the foreground color of an element's text content and text decorations. It can be specified in various formats: name, hex code, RGB, HSL, HSLA, or HWB. */
+  /* Color by Name: Uses predefined color names like 'red', 'blue', 'green'. There are 140 standard names. */
+  /* Example: */
+  p {
+    color: red; /* Sets text color to red */
+  }
+
+  /* Color by Code (Hex): A six-digit hexadecimal code prefixed with #, representing RGB values (e.g., #FF0000 for red). Shorthand three-digit form like #F00 is also possible. */
+  /* Example: */
+  h1 {
+    color: #00FF00; /* Lime green */
+  }
+
+  /* Color by RGB: rgb(red, green, blue) where each value is 0-255 or percentages. */
+  /* Example: */
+  h2 {
+    color: rgb(255, 0, 0); /* Red */
+  }
+
+  /* Color by HSL: hsl(hue, saturation, lightness) where hue is 0-360 degrees, saturation and lightness are 0-100%. */
+  /* Example: */
+  h3 {
+    color: hsl(120, 100%, 50%); /* Green */
+  }
+
+  /* Color by HSLA: Like HSL but with alpha (opacity) from 0-1. */
+  /* Example: */
+  h4 {
+    color: hsla(240, 100%, 50%, 0.5); /* Semi-transparent blue */
+  }
+
+  /* Color by HWB: hwb(hue, whiteness, blackness) with optional alpha. Hue 0-360, whiteness and blackness 0-100%. */
+  /* Example: */
+  h5 {
+    color: hwb(0, 0%, 0%); /* Red (full hue, no white or black) */
+  }
+
+  /* Background Color Property */
+  /* The background-color property sets the background color of an element. It can use the same color formats as the color property (name, hex, RGB, etc.). It doesn't affect the content color. */
+  /* Example: */
+  div {
+    background-color: #FFFF00; /* Yellow background */
+  }
+
+  /* Color System */
+  /* RGB: Additive color model using Red, Green, Blue components (0-255). Primary for screens. */
+  /* Example: rgb(255, 255, 0) is yellow. */
+
+  /* Hex: Hexadecimal representation of RGB. #RRGGBB where each pair is 00-FF. */
+  /* Example: #FF00FF is magenta. */
+
+  /* Letters (Named Colors): Predefined names like 'aliceblue', 'tomato'. Case-insensitive. */
+  /* Example: color: teal; */
+
+  /* Text Properties */
+  /* Text Align: Specifies the horizontal alignment of text within an element. Values: left, right, center, justify. */
+  /* Example: */
+  p {
+    text-align: center; /* Centers the text */
+  }
+
+  /* Font Weight: Sets the thickness of the font. Values: normal (400), bold (700), or numbers like 100-900. */
+  /* Example: */
+  strong {
+    font-weight: bold; /* Bold text */
+  }
+
+  /* Text Decoration: Adds decorations to text like underline, overline, line-through. Can combine or use 'none' to remove. */
+  /* Example: */
+  a {
+    text-decoration: underline; /* Underlines links */
+  }
+
+  /* Line Height: Sets the space between lines of text. Can be a number (multiplier of font size), length (px, em), or percentage. */
+  /* Example: */
+  p {
+    line-height: 1.5; /* 1.5 times the font size */
+  }
+
+  /* Letter Spacing: Adjusts space between characters. Positive increases, negative decreases. Units: px, em. */
+  /* Example: */
+  h1 {
+    letter-spacing: 2px; /* Adds 2px between letters */
+  }
+
+  /* Font Size: Sets the size of the font. Units: px, em, rem, %, vw, etc. */
+  /* Example: */
+  body {
+    font-size: 16px; /* Base font size */
+  }
+
+  /* Font Family: Specifies the font typeface. Can list multiple as fallbacks, ending with generic like 'serif' or 'sans-serif'. */
+  /* Example: */
+  body {
+    font-family: Arial, Helvetica, sans-serif; /* Arial first, then Helvetica, then any sans-serif */
+  }
+
+  /* Selectors */
+  /* Universal Selector: Selects all elements. Uses *. */
+  /* Example: */
+  * {
+    margin: 0; /* Resets margins for all elements */
+  }
+
+  /* Element Selector: Selects all elements of a specific type, like p, div. */
+  /* Example: */
+  p {
+    color: blue; /* All paragraphs blue */
+  }
+
+  /* ID Selector: Selects a unique element with a specific id. Uses #idname. */
+  /* Example: */
+  #header {
+    background: gray; /* Element with id="header" */
+  }
+
+  /* Class Selector: Selects elements with a specific class. Uses .classname. Can apply to multiple elements. */
+  /* Example: */
+  .intro {
+    font-style: italic; /* All elements with class="intro" */
+  }
+
+  /* Descendant Selector: Selects elements that are descendants (children, grandchildren, etc.) of another element. Uses space separator. */
+  /* Example: */
+  div p {
+    color: green; /* All p inside div */
+  }
+
+  /* Combinator Selectors */
+  /* Child Combinator: Selects direct children. Uses >. */
+  /* Example: */
+  ul > li {
+    list-style: none; /* Only direct li children of ul */
+  }
+
+  /* Adjacent Sibling Combinator: Selects the next sibling. Uses +. */
+  /* Example: */
+  h2 + p {
+    margin-top: 0; /* p immediately after h2 */
+  }
+
+  /* General Sibling Combinator: Selects all following siblings. Uses ~. */
+  /* Example: */
+  h2 ~ p {
+    color: gray; /* All p after h2 in the same parent */
+  }
+
+  /* Attribute Selector: Selects elements based on attributes. [attr], [attr=value], etc. */
+  /* Example: */
+  a[href="https://example.com"] {
+    color: purple; /* Links with exact href */
+  }
+
+  /* Pseudo Class: Styles elements in a specific state, like :hover, :active, :first-child. */
+  /* Example: */
+  a:hover {
+    color: red; /* Link on hover */
+  }
+
+  /* Pseudo Elements: Styles specific parts of an element, like ::first-letter, ::first-line, ::selection. */
+  /* First Letter: Styles the first letter. */
+  /* Example: */
+  p::first-letter {
+    font-size: 2em; /* Larger first letter */
+  }
+
+  /* First Line: Styles the first line. */
+  /* Example: */
+  p::first-line {
+    font-weight: bold; /* Bold first line */
+  }
+
+  /* Selection: Styles selected text. */
+  /* Example: */
+  ::selection {
+    background: yellow; /* Highlight color */
+  }
+
+  /* Selector Specificity */
+  /* Specificity determines which CSS rule applies when multiple rules target the same element. Calculated by counting: inline styles (1000), IDs (100), classes/attributes/pseudo-classes (10), elements/pseudo-elements (1). Higher score wins; ties go to the last rule. */
+  /* Example: #id .class p { } has specificity 1,1,1 (100 + 10 + 1 = 111) */
+
+  /* Inline Specificity */
+  /* Inline styles (using style attribute) have the highest specificity (1000) and override other styles unless !important is used. */
+  /* Example in HTML: <p style="color: red;">Overrides external CSS.</p> */
+
+  /* !important */
+  /* The !important declaration overrides all other specificity rules except another !important with higher specificity. Use sparingly as it can make debugging hard. */
+  /* Example: */
+  p {
+    color: blue !important; /* Forces blue, ignoring other rules */
+  }
+
+  /* Inheritance */
+  /* Some CSS properties are inherited from parent elements to children if not specified (e.g., color, font-family). Others like margin are not. Use 'inherit' value to force inheritance. */
+  /* Example: If body { color: black; }, then p will inherit black unless overridden. */
+
+  /* Box Model */
+  /* The CSS box model describes the rectangular boxes generated for elements. Consists of content, padding, border, and margin. Total width = content width + padding + border + margin. */
+
+  /* Height and Width: Set the dimensions of the content area. By default, doesn't include padding/border/margin (box-sizing: content-box). Use box-sizing: border-box to include padding and border. */
+  /* Example: */
+  div {
+    width: 200px;
+    height: 100px;
+  }
+
+  /* Border: Defines the border around the content and padding. Includes width, style, color. */
+  /* Border Width: Thickness like thin, medium, thick, or length (px, em). */
+  /* Example: */
+  div {
+    border-width: 2px;
+  }
+
+  /* Border Style: none, solid, dashed, dotted, etc. */
+  /* Example: */
+  div {
+    border-style: solid;
+  }
+
+  /* Border Color: Color of the border. */
+  /* Example: */
+  div {
+    border-color: black;
+  }
+
+  /* Border Shorthand: Combines width, style, color in one property: border: width style color; */
+  /* Example: */
+  div {
+    border: 1px solid red;
+  }
+
+  /* Border Sides: Individual borders for top, right, bottom, left. */
+  /* Example: */
+  div {
+    border-top: 1px solid blue;
+    border-right: 2px dashed green;
+    border-bottom: 3px dotted yellow;
+    border-left: 4px double red;
+  }
+
+  /* Border Radius: Rounds the corners. Value in px, em, %. Can specify per corner. */
+  /* Example: */
+  div {
+    border-radius: 10px; /* All corners */
+  }
+
+  /* Padding: Space between content and border. Can set all sides or individual. */
+  /* Padding Left/Right/Top/Bottom: Specific sides. */
+  /* Example: */
+  div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  /* Padding Shorthand: One value (all), two (top/bottom, left/right), three (top, left/right, bottom), four (top, right, bottom, left). */
+  /* Example: */
+  div {
+    padding: 10px 20px 10px 20px; /* Clockwise */
+  }
+
+  /* Margin Property: Space outside the border. Can be positive, negative, or auto (for centering). */
+  /* Margin Right/Left/Top/Bottom: Specific sides. */
+  /* Example: */
+  div {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  /* Margin Shorthand: Same as padding: one to four values. */
+  /* Example: */
+  div {
+    margin: 20px auto; /* Top/bottom 20px, left/right auto (centers) */
+  }
+
+  /* =====================================
+    DISPLAY PROPERTY
+  ===================================== */
+  /* The display property specifies how an element is displayed on the web page.
+    It controls the layout behavior of elements.
+    Common values include block, inline, inline-block, and none. */
+
+  /* Block: Takes full width and starts on a new line */
+  .display-block {
+    display: block;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /* Inline: Takes only required width and stays in the same line */
+  .display-inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+  }
+
+  /* Inline-block: Behaves like inline but allows width and height */
+  .display-inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background-color: lightcoral;
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* None: Removes the element completely from the layout */
+  .display-none {
+    display: none;
+  }
+
+  /* =====================================
+    POSITION PROPERTY
+  ===================================== */
+  /* The position property defines how an element is positioned in the document.
+    It works with top, right, bottom, and left properties.
+    Values include static, relative, absolute, fixed, and sticky. */
+
+  /* Relative: Positioned relative to its normal position */
+  .position-relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: #ffe699;
+    padding: 10px;
+  }
+
+  /* Absolute: Positioned relative to the nearest positioned ancestor */
+  .position-absolute {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: #ffb3b3;
+    padding: 10px;
+  }
+
+  /* Fixed: Positioned relative to the viewport and does not move on scroll */
+  .position-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+  }
+
+  /* Sticky: Acts like relative until a scroll position is reached */
+  .position-sticky {
+    position: sticky;
+    top: 0;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+  }
+
+  /* =====================================
+    BACKGROUND PROPERTIES
+  ===================================== */
+  /* Background properties control the background appearance of elements.
+    They include background-color, background-image, repeat, position, and size. */
+
+  .background-box {
+    height: 200px;
+    background-color: lightgray;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* =====================================
+    OVERFLOW PROPERTY
+  ===================================== */
+  /* The overflow property controls what happens when content overflows
+    the dimensions of an element.
+    Values include visible, hidden, scroll, and auto. */
+
+  .overflow-box {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 20px;
+  }
+
+  .overflow-visible {
+    overflow: visible;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .overflow-scroll {
+    overflow: scroll;
+  }
+
+  .overflow-auto {
+    overflow: auto;
+  }
+
+  /* =====================================
+    LIST STYLING
+  ===================================== */
+  /* List styling properties control the appearance of ordered and unordered lists.
+    They include list-style-type, list-style-position, and list-style-image. */
+
+  .list-style-square {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+
+  .list-style-decimal {
+    list-style-type: decimal;
+  }
+
+  .list-no-style {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* =====================================
+    TRANSITIONS
+  ===================================== */
+  /* CSS transitions allow property changes to occur smoothly over time.
+    They are commonly used with hover effects.
+    Properties include transition-property, duration, timing-function, and delay. */
+
+  .transition-box {
+    width: 120px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .transition-box:hover {
+    background-color: red;
+    transform: scale(1.1);
+  }
+
+  /* =====================================
+    ANIMATIONS
+  ===================================== */
+  /* CSS animations allow elements to change styles over time using keyframes.
+    They can run automatically without user interaction. */
+
+  @keyframes slide {
+    from {
+      left: 0;
+    }
+    to {
+      left: 200px;
+    }
+  }
+
+  .animation-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: slide 2s infinite alternate;
+  }
+
+  /* =====================================
+    MEDIA QUERIES
+  ===================================== */
+  /* Media queries allow responsive design by applying CSS
+    based on screen size, resolution, or device type. */
+
+  /* Tablet screens */
+  @media (max-width: 768px) {
+    .background-box {
+      height: 150px;
+    }
+
+    .transition-box {
+      width: 100%;
+    }
+  }
+
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .animation-box {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  /* =====================================
+    FLEXBOX (FLEXIBLE BOX LAYOUT)
+  ===================================== */
+  /* Flexbox is a one-dimensional layout system used to arrange elements
+    in rows or columns with flexible alignment and spacing. */
+
+  /* =====================================
+    FLEX CONTAINER PROPERTIES
+  ===================================== */
+
+  /* display: flex */
+  /* Converts an element into a flex container and enables flexbox layout
+    for its direct children (flex items). */
+  .flex-container {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+  }
+
+  /* flex-direction */
+  /* Defines the direction of the main axis along which flex items are placed.
+    Possible values: row, row-reverse, column, column-reverse. */
+
+  /* row: Items arranged horizontally (default) */
+  .flex-row {
+    flex-direction: row;
+  }
+
+  /* column: Items arranged vertically */
+  .flex-column {
+    flex-direction: column;
+  }
+
+  /* justify-content */
+  /* Aligns flex items along the main axis (horizontal in row, vertical in column).
+    Common values: flex-start, center, flex-end, space-between, space-around. */
+
+  /* Center items */
+  .flex-justify-center {
+    justify-content: center;
+  }
+
+  /* Space between items */
+  .flex-justify-space {
+    justify-content: space-between;
+  }
+
+  /* align-items */
+  /* Aligns flex items along the cross axis (perpendicular to main axis).
+    Common values: stretch, center, flex-start, flex-end, baseline. */
+
+  /* Center items vertically */
+  .flex-align-center {
+    align-items: center;
+  }
+
+  /* flex-wrap */
+  /* Controls whether flex items stay on one line or wrap onto multiple lines.
+    Values: nowrap (default), wrap, wrap-reverse. */
+
+  /* Allows items to wrap */
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* =====================================
+    FLEX ITEM PROPERTIES
+  ===================================== */
+
+  /* Flex items are the direct children of a flex container */
+
+  .flex-item {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+  }
+
+  /* flex-grow */
+  /* Defines how much a flex item should grow relative to other items
+    when extra space is available. Default value is 0. */
+
+  .flex-item-grow {
+    flex-grow: 1;
+  }
+
+  /* flex-shrink */
+  /* Defines how much a flex item should shrink relative to other items
+    when space is insufficient. Default value is 1. */
+
+  .flex-item-shrink {
+    flex-shrink: 1;
+  }
+
+  /* flex-basis */
+  /* Specifies the initial size of a flex item before remaining space
+    is distributed. Can be px, %, auto, etc. */
+
+  .flex-item-basis {
+    flex-basis: 150px;
+  }
+
