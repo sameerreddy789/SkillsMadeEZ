@@ -1,6 +1,6 @@
 ###Git and Github:
 ###Git :
-Gitis a distributed version control system (DVCS) that tracks changes in source code during software development.  It allows developers to manage code history, work on features in isolation using branches, and collaborate efficiently without overwriting each other’s work.
+Git is a distributed version control system (DVCS) that tracks changes in source code during software development.  It allows developers to manage code history, work on features in isolation using branches, and collaborate efficiently without overwriting each other’s work.
 
 ###Github:
 GitHub is a cloud-based platform that hosts Git repositories, enabling collaboration, code sharing, and project management.  It provides tools like pull requests, code reviews, issues, and GitHub Actions for automation
