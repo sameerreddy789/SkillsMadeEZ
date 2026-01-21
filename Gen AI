@@ -29,16 +29,6 @@ It generates original outputs based on user prompts by identifying patterns and 
 
 ---
 
-### Metaphor: Einstein in Your Basement
-
-- Kniberg uses a metaphor where **Einstein represents the combined intelligence of all humans who ever lived**.
-- This "Einstein" is always available, accessible via conversation, capable of performing any intellectual or creative task.
-- Its limitations are human-like: it can make mistakes, misunderstand, or draw wrong conclusions.
-- The **biggest limitation is the user’s imagination and ability to communicate effectively** with the AI.
-- Mastering prompt engineering is akin to learning a new literacy essential for thriving with AI.
-
----
-
 ### Types of Generative AI Models and Modalities
 
 | Model Type          | Input Type       | Output Type    | Use Cases / Examples                                  |
